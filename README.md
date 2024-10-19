@@ -1,3 +1,5 @@
+![banner](https://github.com/user-attachments/assets/fabd1fd3-2760-4068-8aef-84d2061757c9)
+
 # Loan Prediction Model Monitoring with Prometheus and Grafana
 
 <div align = "justify">
