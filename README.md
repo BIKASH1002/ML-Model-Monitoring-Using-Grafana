@@ -18,7 +18,7 @@ This project showcases a real-time monitoring solution for a loan prediction mod
 
 ## Overview
 
-This project leverages Prometheus to scrape and store metrics from a Python-based loan prediction model. Grafana visualizes these metrics in an interactive dashboard, giving real-time insights into model accuracy, loss, and system performance. This approach ensures that you can monitor your model’s behavior and detect performance degradation efficiently.
+This project involves building and monitoring a loan prediction model using a RandomForestClassifier. With Prometheus collecting the model's performance metrics and Grafana visualizing these metrics on an interactive dashboard, the solution ensures real-time insights and helps detect performance bottlenecks early.
 
 ## Setup
 
@@ -42,9 +42,9 @@ This project leverages Prometheus to scrape and store metrics from a Python-base
 
 - Run `train_model.py` to train the **RandomForestClassifier** model on the loan dataset.
 
-- The model automatically exposes metrics such as accuracy and loss to Prometheus at `http://localhost:8000/metrics`.
+- The model automatically exposes `metrics` such as accuracy and loss to Prometheus at `http://localhost:8000/metrics`.
 
-**3. Visualize Metrics in Grafana**
+**3. Configure Grafana for visualization**
 
 - Open Grafana and configure Prometheus as a data source.
 
@@ -71,3 +71,37 @@ This project leverages Prometheus to scrape and store metrics from a Python-base
   - High precision and recall reflect balanced predictions.
   
 - Identify patterns or potential issues using the Prediction Distribution.
+
+## Dashboard Key Metrics
+
+- **Accuracy:** 0.95 – Reflects strong predictive performance.
+
+- **Precision:** 0.91 – Ensures few false positives.
+
+- **Recall:** 0.70 – Some false negatives but reasonable recall.
+
+- **F1-Score:** 0.80 – A good balance between precision and recall.
+
+- **Training Loss:** Tracks the error during training.
+
+- **Prediction Distribution:** Shows the spread of predicted values.
+
+- **Scrape Duration:** Ensures Prometheus collects data within the expected time.
+
+## Potential Improvements
+
+- **Adding Alerts:** Configure Grafana alerts to notify when metrics exceed thresholds (e.g., loss > 0.5).
+
+- **Expanding Metrics:** Include additional metrics such as **AUC-ROC** or epoch-wise loss.
+
+## Conclusion
+
+This project demonstrates how to build, monitor, and visualize a loan prediction model using a modern observability stack. With Prometheus collecting metrics and Grafana providing interactive dashboards, you gain real-time insights into your model’s behavior. This setup ensures that any performance bottlenecks or model degradation can be detected early, making it highly suitable for production environments.
+
+# Credits
+
+- **Kaggle:** for loan prediction dataset
+
+# License
+
+This project is licensed under the 
