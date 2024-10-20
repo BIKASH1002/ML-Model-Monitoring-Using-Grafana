@@ -108,7 +108,7 @@ Following is the Grafana dashboard representing the key metrics:
 
 ## Conclusion
 
-This project demonstrates how to build, monitor, and visualize a loan prediction model using a modern observability stack. With Prometheus collecting metrics and Grafana providing interactive dashboards, you gain real-time insights into your model’s behavior. This setup ensures that any performance bottlenecks or model degradation can be detected early, making it highly suitable for production environments.
+This project demonstrates how to build, monitor and visualize a loan prediction model using a modern observability stack. With Prometheus collecting metrics and Grafana providing interactive dashboards, we gain real-time insights into our model’s behavior. This setup ensures that any performance bottlenecks or model degradation can be detected early, making it highly suitable for production environments.
 
 </div>
 
